@@ -33,9 +33,8 @@ for:
     - ssh-add
     - ssh-keyscan -H heroku.com >> ~/.ssh/known_hosts
     - heroku git:clone -a node-test-skypro --ssh-git
-    - git show-ref
-    - git branch
-    - git push heroku master
+    - git co -b heroku
+    - git push heroku heroku
 -
   branches:
     only:
