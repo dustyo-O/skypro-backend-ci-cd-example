@@ -29,7 +29,7 @@ for:
     - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
     - curl https://cli-assets.heroku.com/install.sh | sh
     - heroku git:clone -a node-test-skypro
-    git push heroku master
+    - git push heroku master
 -
   branches:
     only:
