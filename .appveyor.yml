@@ -32,7 +32,7 @@ for:
     - eval "$(ssh-agent)"
     - ssh-add
     - ssh-keyscan -H heroku.com >> ~/.ssh/known_hosts
-    - heroku git:clone -a node-test-skypro --ssh-git
+    - heroku git:remote -a node-test-skypro --ssh-git
     - git checkout -b heroku
     - git remote -v
     - git push heroku heroku
