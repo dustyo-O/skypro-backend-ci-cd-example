@@ -28,7 +28,7 @@ for:
     - git config --global user.email ci@appveyor.com
     - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
     - curl https://cli-assets.heroku.com/install.sh | sh
-    - ssh-agent /bin/sh
+    - eval "$(ssh-agent)"
     - ssh-add
     - heroku git:clone -a node-test-skypro
     - git push heroku master
