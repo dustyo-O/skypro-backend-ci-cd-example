@@ -31,9 +31,7 @@ for:
     - curl https://cli-assets.heroku.com/install.sh | sh
     - eval "$(ssh-agent)"
     - ssh-add
-    - heroku whoami
-    - heroku login
-    - heroku git:clone -a node-test-skypro
+    - heroku git:clone -a node-test-skypro --ssh-git
     - git push heroku master
 -
   branches:
