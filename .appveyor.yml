@@ -23,6 +23,7 @@ for:
     - echo "-----BEGIN OPENSSH PRIVATE KEY-----" > $HOME/.ssh/id_rsa
     - echo "${priv_key}" | tr " " "\n" >> $HOME/.ssh/id_rsa
     - echo "-----END OPENSSH PRIVATE KEY-----" >> $HOME/.ssh/id_rsa
+    - chmod 400 $HOME/.ssh/id_rsa
     - git config --global credential.helper store
     - git config --global user.name AppVeyor
     - git config --global user.email ci@appveyor.com
